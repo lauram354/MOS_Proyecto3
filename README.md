@@ -27,7 +27,7 @@ Este enfoque es útil para instancias grandes o realistas donde los métodos exa
 
 Este proyecto asimismo tiene la intención de comparar el modelamiento matemático con las heurísticas, por lo que se encontrarán tanto modelos de GA como de Pyomo en los archivos.
 
-Para entender la estructura del proyecto se considera que hay 3 casos, guardados en 3 carpetas denominadas `Caso1`, `Caso2`, `Caso3`.
+Para entender la estructura del proyecto se considera que hay 3 casos, guardados en 3 carpetas denominadas `Caso1`, `Caso2`, `Caso3` dentro de la carpeta denominada `Proyecto 3`.
 
 Cada una de estas luego cuenta con una división de directorios interna: `Datos` y `Modelo`.
 
