@@ -1,23 +1,32 @@
 Este proyecto implementa un algoritmo genético (GA) para resolver el Capacitated Vehicle Routing Problem (CVRP). El objetivo es determinar las rutas óptimas para una flota de vehículos con capacidad limitada, que deben atender a un conjunto de clientes con demandas conocidas, minimizando la distancia total recorrida.
-El algoritmo genético utilizado en este proyecto simula el proceso de evolución natural mediante operadores como selección, cruza (crossover) y mutación para encontrar soluciones eficientes al CVRP. Se utilizó la biblioteca pyeasyga como base, con modificaciones para implementar selección por torneo y otras mejoras experimentales.
+
+El algoritmo genético utilizado en este proyecto simula el proceso de evolución natural mediante operadores como selección, cruza (crossover) y mutación para encontrar soluciones eficientes al CVRP. Se utilizó la biblioteca `pyeasyga` como base, con modificaciones para implementar `selección por torneo` y otras mejoras experimentales.
 
 Este enfoque es útil para instancias grandes o realistas donde los métodos exactos como programación lineal entera no escalan adecuadamente.
 
-Técnicas Utilizadas
+## Técnicas Utilizadas
 
-    Algoritmos Genéticos 
+- Algoritmos Genéticos  
+- `Selección por torneo`  
+- `Representación basada en cromosomas con rutas`  
+- `Evaluación de aptitud (fitness) basada en distancia total`  
+- `Operadores personalizados de mutación y cruce`  
+- `Múltiples ejecuciones con semillas aleatorias para análisis comparativo`
 
-    Selección por torneo
+---
 
-    Representación basada en cromosomas con rutas
+Este proyecto asimismo tiene la intención de comparar el modelamiento matemático con las heurísticas, por lo que se encontrarán tanto modelos de GA como de Pyomo en los archivos.
 
-    Evaluación de aptitud (fitness) basada en distancia total
+Para entender la estructura del proyecto se considera que hay 3 casos, guardados en 3 carpetas denominadas `Caso1`, `Caso2`, `Caso3`.
 
-    Operadores personalizados de mutación y cruce
+Cada una de estas luego cuenta con una división de directorios interna: `Datos` y `Modelo`.
 
-    Múltiples ejecuciones con semillas aleatorias para análisis comparativo.
+> Se recomienda **no modificar** la carpeta de `Datos`, ya que contiene los archivos `.csv` necesarios para que corran los modelos.
 
-    
-  Este proyecto asimismo tiene la intención de comparar el modelamiento matemático con las heurísticas por lo que se encontrarán tanto modelos de GA como de pyomo en los archivos. Para entender la estructura del proyecto se entiende que hay 3 casos, guardados en 3 carpetas dominadas 'Caso1', 'Caso2', 'Caso3'
-  Cada una de estas luego cuenta con una división de directorios interna de 'Datos' y 'Modelo'. Se recomienda no modificar la carpeta de 'Casos' ya que es la que contienen los cvs para que corra el modelo. En la carpeta de 'Modelo' se encuentra un notebook llamado 'modelo.ipynb', este contiene toda la información,
-  tanto los algoritmos genéticos por caso, como los modelos en pyomo. Para ver los resultados primero debe instalar las dependencias a través de 'pip install -r requirements.txt'. Después de esto corra los Jupyter Notebooks de cada caso de manera secuencial. El informe se encuentra fuera de las carpetas anteriormente mencionadas. 
+En la carpeta `Modelo` se encuentra un notebook llamado `modelo.ipynb`, este contiene toda la lógica tanto de los algoritmos genéticos como de los modelos en Pyomo.
+
+## Instrucciones de Ejecución
+
+1. Instalar las dependencias necesarias:
+   ```bash
+   pip install -r requirements.txt
