@@ -1,0 +1,9 @@
+matplotlib
+pandas
+numpy
+folium
+pyeasyga
+tqdm
+memory_profiler
+psutil
+pyomo
