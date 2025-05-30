@@ -1,3 +1,13 @@
+# Proyecto MOS - Entrega 3 - Metaheurísticas
+
+## Proyecto A
+
+##  Integrantes
+
+- Laura Sofia Murcia  Carreño — 202123099
+- María Alejandra Angulo - 202121458S
+- Samuel Ramirez Gomez - 202123423
+
 Este proyecto implementa un algoritmo genético (GA) para resolver el Capacitated Vehicle Routing Problem (CVRP). El objetivo es determinar las rutas óptimas para una flota de vehículos con capacidad limitada, que deben atender a un conjunto de clientes con demandas conocidas, minimizando la distancia total recorrida.
 
 El algoritmo genético utilizado en este proyecto simula el proceso de evolución natural mediante operadores como selección, cruza (crossover) y mutación para encontrar soluciones eficientes al CVRP. Se utilizó la biblioteca `pyeasyga` como base, con modificaciones para implementar `selección por torneo` y otras mejoras experimentales.
