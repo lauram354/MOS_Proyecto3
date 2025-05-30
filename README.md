@@ -30,3 +30,5 @@ En la carpeta `Modelo` se encuentra un notebook llamado `modelo.ipynb`, este con
 1. Instalar las dependencias necesarias:
    ```bash
    pip install -r requirements.txt
+
+2. Correr el modelo.ipynb de cada caso para ver los resultados
